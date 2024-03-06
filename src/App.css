@@ -13,13 +13,22 @@
 header {
   display: flex;
   height: 50px;
-  padding: 10px;
-  justify-content: space-between;
+  padding: 5px 20px;
   align-items: center;
   background-color: rgb(47, 59, 85);
 }
 
 .img {
-  height: 100%;
+  height: 40px;
   max-width: 50px;
+}
+
+.search {
+  width: 700px;
+  margin: 0 20px;
+  height: 40px;
+  padding: 0 10px;
+  border-radius: 20px;
+  background-color: rgb(64, 74, 97);
+  border: none;
 }

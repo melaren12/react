@@ -4,20 +4,25 @@ import LearnSection from "./components/LearnSection";
 import MainSection from "./components/MainSection";
 import TabsSection from "./components/TabsSection";
 import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
-  const [tab, setTab] = useState("learn");
   return (
     <>
-      <Header></Header>
       <main>
-        <TabsSection active={tab} onChange={(current) => setTab(current)} />
+        <Routes>
+          <Route path="/" element={<Header />}>
+            <Route index element={<MainSection />} />
+            <Route path="learn" element={<LearnSection />} />
+          </Route>
+        </Routes>
+        {/* <TabsSection active={tab} onChange={(current) => setTab(current)} />
         {tab === "main" && (
           <>
             <MainSection />
           </>
         )}
-        {tab === "learn" && <LearnSection />}
+        {tab === "learn" && <LearnSection />} */}
       </main>
     </>
   );

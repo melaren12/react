@@ -16,13 +16,6 @@ function App() {
             <Route path="learn" element={<LearnSection />} />
           </Route>
         </Routes>
-        {/* <TabsSection active={tab} onChange={(current) => setTab(current)} />
-        {tab === "main" && (
-          <>
-            <MainSection />
-          </>
-        )}
-        {tab === "learn" && <LearnSection />} */}
       </main>
     </>
   );

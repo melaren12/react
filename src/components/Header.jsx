@@ -21,7 +21,7 @@ export default function Header() {
           <p>Home</p>
         </Link>
         <Link to="/learn" className="link">
-          <p>Learn</p>
+          <p>Dzeeec yeqa el ban es grel</p>
         </Link>
       </header>
       <Outlet />
